@@ -1,8 +1,29 @@
 .gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+/build/classes/
+/build/generated/
+/build/reports/
+/build/resources/
+/build/tmp/
+!src/**/build/
+
+/gradle/wrapper/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+.gradletasknamecache
+.project
+.classpath
+
+*.idea
+.idea
+out/
+gradlew
+gradlew/
+*.bat
+settings.gradle
+*.log
+*.png
+*.gradle
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -12,15 +33,12 @@ build/
 *.iws
 *.iml
 *.ipr
-out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
 ### Eclipse ###
 .apt_generated
-.classpath
 .factorypath
-.project
 .settings
 .springBeans
 .sts4-cache
