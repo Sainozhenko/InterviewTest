@@ -28,20 +28,4 @@ public class TestBase {
     public void tearDown() {
         app.stop();
     }
-
-
-    @BeforeMethod
-    public void startTest(Method m, Object[] p) {
-        logger.info("Start test " + m.getName()+ " with data: " + Arrays.asList(p));
-    }
-    @AfterMethod
-    public void stopTest(ITestResult result) {
-        if(result.isSuccess()){
-            logger.info("PASSED: "+ result.getMethod().getMethodName());
-        }else{
-            logger.error("FAILED: "+ result.getMethod().getMethodName());
-        }
-        logger.info("Stop test");
-        logger.info("============================");
-    }
 }

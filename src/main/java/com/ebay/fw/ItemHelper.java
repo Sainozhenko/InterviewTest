@@ -18,6 +18,6 @@ public class ItemHelper extends BaseHelper{
     }
 
     public String getFirstItemName(String firstItem) {
-        return driver.findElement(By.cssSelector("//ul/li/div/div["+firstItem+"]/a/div/span")).getText();
+        return driver.findElement(By.xpath("//ul/li/div/div["+firstItem+"]/a/div/span")).getText();
     }
 }
